@@ -2,13 +2,14 @@ import React, { createContext, useState,useContext } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import httpStatus from "http-status";
+import server from "../environment";
 
 // Create context
 export const AuthContext = createContext();
 
 // Axios instance
 const client = axios.create({
-  baseURL: "http://localhost:3000/api/auth", // 👈 backend route prefix
+  baseURL: `${server}/api/auth`, // 👈 backend route prefix
   withCredentials: true, // include cookies if backend sets them
 });
 
