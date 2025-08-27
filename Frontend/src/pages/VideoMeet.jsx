@@ -435,7 +435,7 @@ export default function VideoMeetComponent() {
 
     useEffect(() => {
         if (screen !== undefined) {
-            getDislayMedia();
+            getDisplayMedia();
         }
     }, [screen])
     let handleScreen = () => {

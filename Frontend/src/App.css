@@ -61,7 +61,8 @@ align-items: center;
   font-size: 1.7rem
 }
 
-.landingmaincontainer > div:nth-child(2)img {
+.landingmaincontainer > div:nth-child(2) img 
+ {
   height: 70vh;
   width: auto;
 
